@@ -16,7 +16,8 @@ app.get('/randomdog', function (req, res) {
 });
 // >>> КОНЕЦ КОДА СЕРВЕРА
 
+const PORT = process.env.PORT || '3000';
 // не заморачивайтесь, эти 3 строки скопированы из документации
-app.listen(3000, function () {
-  console.log('Example app listening on http://localhost:3000/randomdog');
+app.listen(PORT, function () {
+  console.log(`Example app listening on http://localhost:${PORT}/randomdog`);
 });
